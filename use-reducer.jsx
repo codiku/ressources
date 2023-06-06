@@ -36,3 +36,38 @@ export default function App() {
     </div>
   );
 }
+
+
+
+
+
+
+
+import axios from "axios";
+
+function initCounter(initialValue) {
+  return initialValue;
+}
+
+async function fetchRandomNumber() {
+  const { data } = await axios(
+    "https://www.random.org/integers/?num=1&min=1&max=1000&col=1&base=10&format=plain"
+  );
+  return data;
+}
+function counterReducer(currentState, action) {
+  switch (action.type) {
+    case "increment":
+      return currentState + 1;
+    case "decrement":
+      return currentState - 1;
+    case "reset":
+      return 0;
+    case "customIncrement":
+      return currentState + action.payload;
+    default:
+      return currentState;
+  }
+}
+
+export { initCounter, counterReducer, fetchRandomNumber };
