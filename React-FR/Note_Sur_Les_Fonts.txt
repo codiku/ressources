@@ -1,0 +1,6 @@
+Dans la prochaine vidéos nous allons charger des polices (fonts)
+
+Je te conseil fortement, pour le développement dans ce cours, d'utiliser une navigateur comme chrome ou mozilla.
+
+Certains participants rencontrent des problèmes pour charger les polices en provenance de cdnfonts.com lorsque des navigateurs (comme Brave par exemple)  sont utilisés.
+Ce genre de navigateur à des politiques de sécurité très strict.
