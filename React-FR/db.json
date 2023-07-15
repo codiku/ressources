@@ -1,0 +1,46 @@
+{
+"notes": [
+{
+"title": "React - Props",
+"content": "Les props sont des données que je peux envoyer à un composant. Vous pouvez envoyer n'importe quel type de données : objets, chaînes de caractères, nombres, tableaux, JSX...\nVous ne pouvez jamais modifier directement les props, elles sont en lecture seule. Chaque fois qu'une prop du composant change, le composant est rendu à nouveau.\n\nExemple :\n\n<Component myProps="Ceci est une prop" />",
+"created_at": "23/08/2022",
+"id": 2
+},
+{
+"title": "React - States",
+"content": "Un state est une donnée gérée par un composant. Chaque fois qu'un state du composant change, le composant est rendu à nouveau.",
+"created_at": "23/08/2022",
+"id": 5
+},
+{
+"title": "React - Hooks",
+"content": "Les hooks sont des fonctions qui vous permettent d'utiliser des states et d'autres fonctionnalités de React.\n\nuseEffect() et useState() sont deux hooks React populaires.",
+"created_at": "23/08/2022",
+"id": 6
+},
+{
+"title": "React - useEffect() ",
+"content": "La fonction passée à useEffect s'exécute après que le premier rendu soit affiché à l'écran.\nVous pouvez passer un tableau en tant que deuxième paramètre. useEffect() s'exécutera à chaque fois qu'une valeur de ce tableau change.\nVous pouvez retourner une fonction dans useEffect() qui sera exécutée lorsque le composant est supprimé du DOM.\n\nExemple\n\nuseEffect( () => {\n console.log("Exécuté lors du premier rendu")\n}, [])\n\nuseEffect( () => {\n console.log("Exécuté lors du premier rendu et lorsque valueToListen change")\n}, [valueToListen])\n\nuseEffect( () => {\n console.log("Exécuté lors du premier rendu")\n return () =>{\n console.log("Exécuté lorsque le composant est supprimé du DOM")\n }\n}, [])",
+"created_at": "23/08/2022",
+"id": 8
+},
+{
+"title": "React - useState()",
+"content": "useState est un hook de React qui permet d'accéder à une valeur et à un setter.\nChaque fois que le setter est appelé, la valeur est mise à jour et le composant est rendu à nouveau.\nVous pouvez passer une valeur par défaut à useState.\n\nExemple :\n\nconst [value, setValue] = useState("valeurParDéfaut")",
+"created_at": "23/08/2022",
+"id": 9
+},
+{
+"title": "Javascript - Destructuring",
+"content": "La syntaxe de l'affectation par décomposition est une expression JavaScript qui permet de déballer les valeurs d'un tableau ou les propriétés d'un objet, dans des variables distinctes.\n\nExemple :\n\nlet a, b, rest;\n[a, b] = [10, 20];\n\nconsole.log(a);\n// Sortie attendue : 10\n\nconsole.log(b);\n// Sortie attendue : 20\n\n[a, b, ...rest] = [10, 20, 30, 40, 50];\n\nconsole.log(rest);\n// Sortie attendue : Array [30, 40, 50]\n",
+"created_at": "13/10/2022",
+"id": 10
+},
+{
+"title": "Javascript - map()",
+"content": "La méthode map() crée un nouveau tableau avec les résultats de l'appel d'une fonction fournie sur chaque élément du tableau initial.\n\nExemple :\n\nconst array1 = [1, 4, 9, 16];\n\n// On passe une fonction à map\nconst map1 = array1.map(x => x * 2);\n\nconsole.log(map1);\n// Sortie attendue : Array [2, 8, 18, 32]",
+"created_at": "13/10/2022",
+"id": 11
+}
+]
+}
