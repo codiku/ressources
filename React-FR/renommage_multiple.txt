@@ -1,0 +1,10 @@
+Astuce VScode : Séléctionner de plusieurs chaines de caratères identiques dans un fichier
+
+Mac :  CMD + D
+Windows : CTRL + D
+
+Réappuye jusqu' à avoir selectionné toutes les occurences de ton choix, puis, par exemple renomme les !
+
+Exemple :
+
+https://drive.google.com/file/d/11IY2nMQ_doSd5RpVTm7_reHj461uedRM/view?usp=share_link
